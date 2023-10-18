@@ -1,5 +1,6 @@
 const express = require("express");
 const errorHandler = require("./middlewares/errorHandler");
+const dotenv = require("./node_modules/dotenv").config();
 const app = express();
 const PORT = process.env.PORT;
 const dealRoute = require("./routes/dealRoute");
