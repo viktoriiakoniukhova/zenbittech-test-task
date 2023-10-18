@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-const url = "http://localhost:5000";
+const url = "https://zenbittech-test-server.onrender.com";
 
 //Actions
 export const registerUser = createAsyncThunk(

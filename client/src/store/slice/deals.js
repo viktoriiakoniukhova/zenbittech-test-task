@@ -1,7 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const url = "http://localhost:5000";
+const url = "https://zenbittech-test-server.onrender.com";
+
 //Action
 export const fetchDeals = createAsyncThunk("fetchDeals", async () => {
   try {
