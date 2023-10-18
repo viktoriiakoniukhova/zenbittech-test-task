@@ -8,7 +8,7 @@ const authRoute = require("./routes/authRoute");
 
 // Set middleware of CORS
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", proccess.env.URL_CLIENT);
+  res.setHeader("Access-Control-Allow-Origin", process.env.URL_CLIENT);
   res.setHeader("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
   res.setHeader(
     "Access-Control-Allow-Headers",
