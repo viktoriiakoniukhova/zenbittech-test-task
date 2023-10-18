@@ -5,6 +5,7 @@ const pool = new Pool({
   host: process.env.PG_HOSTNAME,
   port: process.env.PG_PORT,
   database: process.env.PG_DATABASE,
+  ssl: true,
 });
 
 pool
