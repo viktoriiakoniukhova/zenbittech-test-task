@@ -1,4 +1,4 @@
-# **AUTH API**
+# **TEST TASK**
 
 An app that includes a few responsible pages about real estate deals with authentication.
 
