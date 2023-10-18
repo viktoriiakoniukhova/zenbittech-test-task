@@ -7,4 +7,13 @@ const pool = new Pool({
   database: process.env.PG_DATABASE,
 });
 
+pool
+  .connect()
+  .then(() => {
+    console.log("Connected to PostgreSQL database");
+  })
+  .catch((error) => {
+    console.error("Error connecting to PostgreSQL:", error);
+  });
+
 module.exports = pool;
