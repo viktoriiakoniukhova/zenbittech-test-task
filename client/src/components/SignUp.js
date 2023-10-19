@@ -146,8 +146,7 @@ const SignUp = () => {
 
   useEffect(() => {
     if (success) navigate("/login");
-    if (userEmail) navigate("/");
-  }, [navigate, userEmail, success]);
+  }, [navigate, success]);
 
   return (
     <Content>
