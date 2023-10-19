@@ -2,7 +2,7 @@ import axios from "axios";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const url = "https://zenbittech-test-server.onrender.com";
-
+const purl = "https://zenbittech-test-task.vercel.app";
 //Actions
 export const registerUser = createAsyncThunk(
   "auth/register",
@@ -22,6 +22,7 @@ export const registerUser = createAsyncThunk(
         },
         config
       );
+      window.location.href = `${purl}/login`;
     } catch (error) {
       if (error.response && error.response.data.message) {
         return rejectWithValue(error.response.data.message);

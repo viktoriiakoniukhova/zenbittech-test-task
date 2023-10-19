@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../store/slice/auth";
@@ -143,10 +143,6 @@ const SignUp = () => {
 
     dispatch(registerUser({ name, email: email.toLowerCase(), password: pwd }));
   };
-
-  useEffect(() => {
-    if (success) navigate("/login");
-  }, [success]);
 
   return (
     <Content>
