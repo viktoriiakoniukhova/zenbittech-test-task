@@ -6,6 +6,8 @@ const pool = new Pool({
   port: process.env.PG_PORT,
   database: process.env.PG_DATABASE,
   ssl: true,
+  idleTimeoutMillis: 0,
+  connectionTimeoutMillis: 0,
 });
 
 pool
