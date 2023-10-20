@@ -8,6 +8,15 @@ const pool = new Pool({
   ssl: true,
 });
 
+pool
+  .connect()
+  .then(() => {
+    console.log("Connected to PostgreSQL database");
+  })
+  .catch((error) => {
+    console.error("Error connecting to PostgreSQL:", error);
+  });
+
 pool.on("error", (err) => {
   console.log(err);
 });
