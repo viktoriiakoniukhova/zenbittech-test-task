@@ -2,6 +2,8 @@
 
 An app that includes a few responsible pages about real estate deals with authentication.
 
+ **!IF DEALS IS NOT DISPLAYED TRY TO WAIT AND RELOAD THE PAGE!**
+ 
 ## **FRONTEND**
 
 1. Responsible design
