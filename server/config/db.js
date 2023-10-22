@@ -24,6 +24,13 @@ pool
     console.error("Error connecting to PostgreSQL:", error);
   });
 
+pool.on("connect", (_client) => {
+  // On each new client initiated, need to register for error(this is a serious bug on pg, the client throw errors although it should not)
+  _client.on("error", (err) => {
+    console.log(err);
+  });
+});
+
 pool.on("error", (err) => {
   console.log(err);
 });
